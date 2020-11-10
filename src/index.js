@@ -15,7 +15,7 @@ const maxValue = colors.length - 1;
 
 function setBodyColor() {
   const pickedColor = colors[randomIntegerFromInterval(minValue, maxValue)];
-  refs.body.style.backgroundColor = `${pickedColor}`;
+  refs.body.style.backgroundColor = pickedColor;
 }
 
 refs.startBtn.addEventListener('click', onStartbtnClick);
